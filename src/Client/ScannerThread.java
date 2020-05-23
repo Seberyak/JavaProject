@@ -4,13 +4,16 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class ScannerThread extends Thread{
-    Scanner scanner;
+
     PrintWriter out;
-    BreakClass Break;
-    public ScannerThread(Scanner myObj, PrintWriter myObj2, BreakClass aBreak) {
-        this.scanner = myObj;
-        this.out = myObj2;
-        this.Break = aBreak;
+    BufferInputThread bufferInputThread;
+    Scanner scanner;
+
+
+    public ScannerThread(Scanner scanner, PrintWriter printWriter, BufferInputThread bufferInputThread) {
+        this.scanner = scanner;
+        this.out = printWriter;
+        this.bufferInputThread = bufferInputThread;
     }
 
     @Override
@@ -19,16 +22,20 @@ public class ScannerThread extends Thread{
         String outMessage;
         System.out.println(Thread.currentThread().getName());
 
-        while (true){
-            outMessage = scanner.nextLine();
-            out.println(outMessage);
-            if(outMessage.equals("exit")) Break.setBreak(true);
-            if(Break.getBreak()) break;
-        }
+        while (!isInterrupted()){
 
-//    scanner.close();
-    System.out.println("Inside Client.ScannerThread scanner closed");
-//    out.close();
+            try {
+                outMessage = scanner.nextLine();
+                if(!outMessage.isEmpty()) out.println(outMessage);
+                if(outMessage.equals("exit")) {
+                    bufferInputThread.interrupt();
+                    break;
+                }
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
 
 
     }

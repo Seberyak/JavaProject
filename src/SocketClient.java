@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class SocketClient {
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("localhost", 4322);
+        Socket socket = new Socket("localhost", 3443);
 
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 
