@@ -34,7 +34,9 @@ public class ThreadServer implements Runnable {
 
         input.start();
 
-        out.println("Hello there!");
+        out.println("Hello there! Please First enter your Username...");
+
+//        OnlineClients.getClientsPairList().forEach( e -> out.println(e.name));
 //        output.start();
 
         input.join();
