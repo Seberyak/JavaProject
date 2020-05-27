@@ -1,4 +1,5 @@
 
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -13,7 +14,6 @@ public class ClientHandler implements Runnable {
     private PrintWriter outMessage;
     // входящее собщение
     private Scanner inMessage;
-
     private static final String HOST = "localhost";
     private static final int PORT = 3443;
     // клиентский сокет

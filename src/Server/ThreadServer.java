@@ -9,15 +9,19 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ThreadServer {
+public class ThreadServer implements Runnable {
+
+    Socket socket;
+
+    public ThreadServer(Socket socket) {
+        this.socket = socket;
+    }
 
 
-    public static void main(String[] args) throws IOException, InterruptedException {
+    @Override
+    public  void  run(){
 
-        ServerSocket server = new ServerSocket(4321);
-
-        System.out.println("Waiting for the client request");
-        Socket socket = server.accept();
+        try{
 
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
@@ -39,7 +43,23 @@ public class ThreadServer {
 
         in.close();
         out.close();
+        socket.close();
 
-        server.close();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
     }
+
+
+
+
+
+//    public static void main(String[] args) throws IOException, InterruptedException {
+
+//        ServerSocket server = new ServerSocket(4321);
+//
+//        System.out.println("Waiting for the client request");
+//        Socket socket = server.accept();
+
+//    }
 }
