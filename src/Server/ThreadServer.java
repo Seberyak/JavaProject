@@ -20,7 +20,7 @@ public class ThreadServer implements Runnable {
 
     @Override
     public  void  run(){
-
+        OnlineClients onlineClients = new OnlineClients();
         try{
 
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));

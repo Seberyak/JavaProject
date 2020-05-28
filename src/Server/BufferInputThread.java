@@ -25,6 +25,7 @@ public class BufferInputThread extends Thread{
         Thread.currentThread().setName("Client.BufferInputThread");
         String in;
         String username = "temp";
+        int myport = 0;
 //        System.out.println(Thread.currentThread().getName());
         try {
             String name = bufferedReader.readLine();
@@ -32,6 +33,7 @@ public class BufferInputThread extends Thread{
                 if(OnlineClients.getClientsPairList().get(i).getPort()== socket.getPort()){
                     OnlineClients.getClientsPairList().get(i).setName(name);
                     username = name;
+                    myport = OnlineClients.getClientsPairList().get(i).getPort();
                 }
             }
         } catch (IOException e) {
@@ -41,7 +43,16 @@ public class BufferInputThread extends Thread{
         while (!isInterrupted()){
             try {
                 in = bufferedReader.readLine();
-                System.out.println("Sender " + username + ": " + in);
+
+//                for(int i =0;i<OnlineClients.getClientsPairList().size();i++){
+//
+//                    System.out.println(OnlineClients.getClientsPairList().get(i));
+//                }
+
+                // send msg to all
+                OnlineClients.sendMsgAll(username+" : "+in, myport);
+
+                System.out.println(username + ": " + in);
                 if (in.equals("exit") ) {
 
                     bufferedReader.close();

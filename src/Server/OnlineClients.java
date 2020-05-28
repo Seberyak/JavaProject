@@ -12,4 +12,11 @@ public class OnlineClients {
     public static ArrayList<ClientsPair> getClientsPairList() {
         return clientsPairList;
     }
+    public static void sendMsgAll(String msg, int port){
+        for(ClientsPair client:clientsPairList){
+            if(client.getPort()!=port) client.getOutMsg().println(msg);
+        }
+    }
+
+
 }

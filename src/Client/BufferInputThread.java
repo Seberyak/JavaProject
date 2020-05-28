@@ -20,7 +20,7 @@ public class BufferInputThread extends Thread{
         while (!isInterrupted()){
             try {
                 in = bufferedReader.readLine();
-                System.out.println("Sender : " + in);
+                System.out.println(in);
 //                if(in.equals("exit")) {
 //                    System.out.println("Sender closed chat");
 //                }

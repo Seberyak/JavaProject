@@ -20,42 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6202ad5b-fef1-48f2-b83c-f3799986ce68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/JavaProject/Server/ClientsPair.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JavaProject/Server/OnlineClients.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/ClientsPair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server/OnlineClients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client/BufferInputThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Client/BufferInputThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client/ScannerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Client/ScannerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client/ThreadClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Client/ThreadClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Client2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/META-INF/JavaProject.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Server.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/BufferInputThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Server/BufferInputThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/OtarasSocketServerThreaded.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Server/OtarasSocketServerThreaded.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/SocketThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Server/SocketThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/ClientsPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Server/ClientsPair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/OnlineClients.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Server/OnlineClients.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/ThreadServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Server/ThreadServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Sever/ScannerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Sever/ScannerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/SocketClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/SocketClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/SocketServerThreaded.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/SocketServerThreaded.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/SocketThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/SocketThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Testing/GlobalClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Testing/GlobalClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Testing/MyObj.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Testing/MyObj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Testing/oneClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Testing/oneClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Testing/secondClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Testing/secondClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/BufferInputThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Server/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/BufferInputThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/OtarasSocketServerThreaded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/OtarasSocketServerThreaded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/ClientsPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/ClientsPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/OnlineClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/OnlineClients.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Server/ThreadServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/ThreadServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,8 +145,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.OtarasSocketServerThreaded" />
-        <item itemvalue="Application.ThreadServer" />
         <item itemvalue="Application.Client (1)" />
+        <item itemvalue="Application.ThreadServer" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Client2" />
       </list>
@@ -198,6 +174,8 @@
       <workItem from="1590600462375" duration="743000" />
       <workItem from="1590601229404" duration="540000" />
       <workItem from="1590601790079" duration="7363000" />
+      <workItem from="1590652820622" duration="1171000" />
+      <workItem from="1590654011994" duration="5762000" />
     </task>
     <servers />
   </component>
@@ -229,10 +207,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1590600957290" />
-    <state x="540" y="86" width="541" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1590608075937">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="675" y="107" width="541" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1590657933013">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="86" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1590608075937" />
+    <state x="675" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590657933013" />
     <state x="524" y="103" width="541" height="587" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1590238303292" />
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590234989321">
       <screen x="67" y="27" width="1299" height="741" />
@@ -242,31 +221,35 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1590222961548" />
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1590610409825">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1590659298412">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590610409825" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590659298412" />
     <state width="1874" height="162" key="GridCell.Tab.0.bottom/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1590255665235" />
-    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1590610409825">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1590659298412">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1590610409825" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590659298412" />
     <state width="1874" height="162" key="GridCell.Tab.0.center/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.center/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1590255665233" />
-    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1590610409825">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1590659298412">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1590610409825" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590659298412" />
     <state width="1874" height="162" key="GridCell.Tab.0.left/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086446" />
     <state width="1874" height="196" key="GridCell.Tab.0.left/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1590255665232" />
-    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1590610409825">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1590659298412">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1590610409825" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590659298412" />
     <state width="1874" height="162" key="GridCell.Tab.0.right/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.right/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1590255665234" />
@@ -291,9 +274,10 @@
     </state>
     <state x="125" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1590600970101" />
     <state x="173" y="38" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1589634209164" />
-    <state x="167" y="125" width="1099" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590234155467">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="148" y="138" width="1625" height="763" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590658597997">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="148" y="138" width="1625" height="763" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590658597997" />
     <state x="167" y="125" width="1099" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1299.741@67.27.1299.741" timestamp="1590234155467" />
     <state x="449" y="536" key="com.intellij.ide.util.TipDialog" timestamp="1590597733306">
       <screen x="0" y="339" width="1920" height="741" />
@@ -313,10 +297,11 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1590235912017" />
-    <state x="369" y="70" width="795" height="764" key="search.everywhere.popup" timestamp="1590607851646">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="461" y="87" width="994" height="953" key="search.everywhere.popup" timestamp="1590654099820">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="369" y="70" width="795" height="764" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1590607851646" />
+    <state x="461" y="87" width="994" height="953" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590654099820" />
     <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1589824766089" />
   </component>
 </project>
