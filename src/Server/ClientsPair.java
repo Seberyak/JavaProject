@@ -1,23 +1,33 @@
 package Server;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
 public class ClientsPair {
-    Socket socket;
-    int port;
-    String name;
+    private Socket socket;
+    private int port;
+    private String name;
+    private boolean OnlineStatus = false;
     private PrintWriter outMsg;
-    public ClientsPair(Socket socket,int port, String name){
+    private BufferedReader inMsg;
+
+    public ClientsPair(Socket socket,int port){
         this.socket = socket;
         this.port = port;
-        this.name = name;
+        this.OnlineStatus = true;
         try {
             this.outMsg = new PrintWriter(socket.getOutputStream(),true);
+            this.inMsg = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            outMsg.println("Server: Hello in our ChatRoom! Before joining chat please tell us your name...");
+//            outMsg.println("Type your name first");
+            name = inMsg.readLine();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
     public Socket getSocket() {
@@ -32,13 +42,17 @@ public class ClientsPair {
         return port;
     }
 
-    public PrintWriter getOutMsg() {
-        return outMsg;
-    }
+    public void setOnlineStatus(boolean onlineStatus) { OnlineStatus = onlineStatus; }
+
+    public boolean isOnline() {      return OnlineStatus;    }
 
     public void setPort(int port) {
         this.port = port;
     }
+
+    public PrintWriter getOutMsg() {        return outMsg;    }
+
+    public BufferedReader getInMsg() {        return inMsg;    }
 
     public String getName() {
         return name;

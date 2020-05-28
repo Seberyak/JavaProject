@@ -17,7 +17,7 @@ public class ThreadClient  extends  Thread{
             PrintWriter printWriter = new PrintWriter(socket.getOutputStream(),true);
             Scanner scanner = new Scanner(new InputStreamReader(System.in));
 
-            BufferInputThread input = new BufferInputThread(bufferedReader,socket);
+            BufferInputThread input = new BufferInputThread(bufferedReader);
             ScannerThread output = new ScannerThread(scanner,printWriter,input);
             input.start();
             output.start();
@@ -33,12 +33,7 @@ public class ThreadClient  extends  Thread{
             System.out.println("________________________");
             System.out.println("Chat: You left the chat.");
 
-//            new Thread(new Runnable() {
-//                @Override
-//                public void run() {
-//
-//                }
-//            }).start();
+
             printWriter.close();
             scanner.close();
             bufferedReader.close();

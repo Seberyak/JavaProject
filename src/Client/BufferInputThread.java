@@ -9,11 +9,11 @@ import java.util.Scanner;
 
 public class BufferInputThread extends Thread {
     BufferedReader bufferedReader;
-    Socket socket;
 
-    public BufferInputThread(BufferedReader sc, Socket socket) {
+
+    public BufferInputThread(BufferedReader sc) {
         this.bufferedReader = sc;
-        this.socket = socket;
+
     }
 
 

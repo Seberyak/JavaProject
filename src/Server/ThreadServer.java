@@ -11,10 +11,10 @@ import java.net.Socket;
 
 public class ThreadServer implements Runnable {
 
-    Socket socket;
+    ClientsPair client;
 
-    public ThreadServer(Socket socket) {
-        this.socket = socket;
+    public ThreadServer(ClientsPair client) {
+        this.client = client;
     }
 
 
@@ -23,19 +23,20 @@ public class ThreadServer implements Runnable {
         OnlineClients onlineClients = new OnlineClients();
         try {
 
-            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+            Socket socket = client.getSocket();
+            BufferedReader in = client.getInMsg();
+            PrintWriter out = client.getOutMsg();
 
 
             System.out.println("Client with port " + socket.getPort() + " - joined the ChatRoom.");
 //            System.out.println("Client port " + socket.getPort());
 //            System.out.println("Server port " + socket.getLocalPort());
 
-            BufferInputThread input = new BufferInputThread(in, socket, out);
+            BufferInputThread input = new BufferInputThread(client);
 //        Sever.ScannerThread output = new ScannerThread(scanner,out);
             input.start();
 
-            out.println("Server: Hello in our ChatRoom! Before joining chat please tell us your name...");
+
 //        output.start();
 
             input.join();

@@ -12,37 +12,40 @@ import java.util.Scanner;
 
 public class BufferInputThread extends Thread {
     BufferedReader bufferedReader;
-    Socket socket;
     PrintWriter printWriter;
+    ClientsPair client;
 
-    public BufferInputThread(BufferedReader sc, Socket socket, PrintWriter printWriter) {
-        this.bufferedReader = sc;
-        this.socket = socket;
-        this.printWriter = printWriter;
+    public BufferInputThread(ClientsPair client) {
+        this.client =   client;
+        this.printWriter = client.getOutMsg();
+        this.bufferedReader = client.getInMsg();
+
     }
+
 
 
     @Override
     public void run() {
         Thread.currentThread().setName("Client.BufferInputThread");
         String in;
-        String username = "temp";
-        int myport = 0;
+
+
 //        System.out.println(Thread.currentThread().getName());
-        try {
-            String name = bufferedReader.readLine();
-            for (ClientsPair client : OnlineClients.getClientsPairList()) {
-                if (client.getPort() == socket.getPort()) {
-                    client.setName(name);
-                    username = name;
-                    myport = client.getPort();
-                }
-            }
-            printWriter.println("Chat: Welcome " + username + ". You're in chat now.");
-            System.out.println("Client with port " + myport + " - set name to: " + username);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            String name = bufferedReader.readLine();
+//            for (ClientsPair client : OnlineClients.getClientsPairList()) {
+//                if (client.getPort() == socket.getPort()) {
+//                    client.setName(name);
+//                    username = name;
+//                    myport = client.getPort();
+//                }
+//            }
+//            printWriter.println("Chat: Welcome " + username + ". You're in chat now.");
+//            System.out.println("Client with port " + myport + " - set name to: " + username);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+        Thread.currentThread().setName("BufferInput Thread from "+client.getName());
 
         while (!isInterrupted()) {
             try {
@@ -50,17 +53,17 @@ public class BufferInputThread extends Thread {
 
                 SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
                 Date date = new Date();
-                String currentTime = formatter.format(date).toString();
+                String currentTime = formatter.format(date);
 
                 // send msg to all
-                OnlineClients.sendMsgAll(currentTime, username, in, myport);
+                OnlineClients.sendMsgAll(currentTime, client.getName(), in, client.getPort());
 
-                System.out.println(currentTime + " " + username + ": " + in);
+                System.out.println(currentTime + " " + client.getName() + ": " + in);
                 if (in.equals("exit")) {
-
+                    OnlineClients.removeClient(client.getName());
                     bufferedReader.close();
                     printWriter.close();
-                    socket.close();
+                    client.getSocket().close();
                     break;
                 }
             } catch (IOException e) {
@@ -70,8 +73,8 @@ public class BufferInputThread extends Thread {
         }
         String ClientLeftMessageForServer = "";
         for (ClientsPair client : OnlineClients.getClientsPairList()) {
-            if (client.getPort() == socket.getPort()) {
-                ClientLeftMessageForServer = client.name + " left the chat.";
+            if (client.getPort() == client.getSocket().getPort()) {
+                ClientLeftMessageForServer = client.getName() + " left the chat.";
             }
         }
         System.out.println(ClientLeftMessageForServer);
