@@ -25,8 +25,11 @@ public class ScannerThread extends Thread{
         while (!isInterrupted()){
 
             try {
+
                 outMessage = scanner.nextLine();
-                if(!outMessage.isEmpty()) out.println(outMessage);
+                if(!outMessage.isEmpty()){
+                    out.println(outMessage);
+                }
                 if(outMessage.equals("exit")) {
                     bufferInputThread.interrupt();
                     break;

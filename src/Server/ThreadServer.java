@@ -19,41 +19,37 @@ public class ThreadServer implements Runnable {
 
 
     @Override
-    public  void  run(){
+    public void run() {
         OnlineClients onlineClients = new OnlineClients();
-        try{
+        try {
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 
-        System.out.println("Client port " + socket.getPort());
-        System.out.println("Server port " + socket.getLocalPort());
 
-        BufferInputThread input = new BufferInputThread(in,socket,out);
+            System.out.println("Client with port " + socket.getPort() + " - joined the ChatRoom.");
+//            System.out.println("Client port " + socket.getPort());
+//            System.out.println("Server port " + socket.getLocalPort());
+
+            BufferInputThread input = new BufferInputThread(in, socket, out);
 //        Sever.ScannerThread output = new ScannerThread(scanner,out);
+            input.start();
 
-        input.start();
-
-        out.println("Hello there! Please First enter your Username...");
-
-//        OnlineClients.getClientsPairList().forEach( e -> out.println(e.name));
+            out.println("Server: Hello in our ChatRoom! Before joining chat please tell us your name...");
 //        output.start();
 
-        input.join();
-        System.out.println("input interapted: " + input.getState());
+            input.join();
+//        System.out.println("input interapted: " + input.getState());
 //        output.interrupt();
 
-        in.close();
-        out.close();
-        socket.close();
+            in.close();
+            out.close();
+            socket.close();
 
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
     }
-
-
-
 
 
 //    public static void main(String[] args) throws IOException, InterruptedException {

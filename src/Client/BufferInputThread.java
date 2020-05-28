@@ -2,13 +2,18 @@ package Client;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.net.Socket;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 
-public class BufferInputThread extends Thread{
+public class BufferInputThread extends Thread {
     BufferedReader bufferedReader;
-    public BufferInputThread(BufferedReader sc) {
+    Socket socket;
+
+    public BufferInputThread(BufferedReader sc, Socket socket) {
         this.bufferedReader = sc;
+        this.socket = socket;
     }
 
 
@@ -16,11 +21,14 @@ public class BufferInputThread extends Thread{
     public void run() {
         Thread.currentThread().setName("Client.BufferInputThread");
         String in;
-        System.out.println(Thread.currentThread().getName());
-        while (!isInterrupted()){
+//        System.out.println(Thread.currentThread().getName());
+        System.out.println("Welcome! You've joined to our chat.");
+        while (!isInterrupted()) {
             try {
                 in = bufferedReader.readLine();
-                System.out.println(in);
+                if(in!=null){
+                    System.out.println(in);
+                }
 //                if(in.equals("exit")) {
 //                    System.out.println("Sender closed chat");
 //                }
@@ -29,7 +37,6 @@ public class BufferInputThread extends Thread{
             }
 
         }
-        System.out.println("Inside Client.BufferInputThread: end");
 
 
     }
