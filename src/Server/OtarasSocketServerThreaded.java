@@ -10,7 +10,6 @@ import java.util.List;
 public class OtarasSocketServerThreaded {
     //socket server port on which it will listen
     private static final int PORT = 4321;
-//    static ArrayList<ClientsPair> clientsPairList = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
         ServerSocket server = new ServerSocket(PORT);
@@ -23,9 +22,8 @@ public class OtarasSocketServerThreaded {
             while (true){
                 clientsPair = new ClientsPair(socket,socket.getPort());
                 //if client added to list, break this loop
-                if(OnlineClients.addClientToList(clientsPair)) break;
+                if(OnlineClients.getInstance().addClientToList(clientsPair)) break;
             }
-//            OnlineClients.getClientsPairList().forEach( e -> System.out.println(e.socket));
 
             Thread thread = new Thread(new ThreadServer(clientsPair));
             thread.start();

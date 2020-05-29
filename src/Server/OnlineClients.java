@@ -3,35 +3,48 @@ package Server;
 import java.util.ArrayList;
 
 public class OnlineClients {
-    public static ArrayList<ClientsPair> clientsPairList = new ArrayList<>();
+    public  ArrayList<ClientsPair> clientsPairList = new ArrayList<>();
+    private   ArrayList<String> offlineClients= new ArrayList<>(); //here is clients names with offline status
 
-    public static boolean addClientToList(ClientsPair newClient) {
-        if(!getClientsPairList().isEmpty()){
+    private OnlineClients(){}
 
-            for(ClientsPair client:clientsPairList){
+    private static  final OnlineClients INSTANCE = new OnlineClients();
 
-                //if client with same name is online, new client must enter another name...
-                if(newClient.getName().equals(client.getName()) && client.isOnline()) {
-                    newClient.getOutMsg().println("The user with that name already exists!");
-                    return false;
-                }
-                else if(newClient.getName().equals(client.getName()) && !client.isOnline()){
+    public static OnlineClients getInstance() {
+        return INSTANCE;
+    }
 
-//                    OnlineClients.removeClient(newClient.getName());
-                    newClient.getOutMsg().println("Welcome back, "+ client.getName()+'!');
-                    OnlineClients.getClientsPairList().remove(client);
-                }
+
+
+    public boolean addClientToList(ClientsPair newClient) {
+        for (ClientsPair client: clientsPairList) {
+
+            //if client with same name is online, new client must enter another name...
+            if (client.getName().equals(newClient.getName())) {
+                newClient.getOutMsg().println("The user with that name already exists!");
+                return false;
             }
         }
-        OnlineClients.clientsPairList.add(newClient);
+        for (String offlineclient : offlineClients) {
+            if (offlineclient.equals(newClient.getName())) {
+                newClient.getOutMsg().println(newClient.getName() + " welcome back!");
+                clientsPairList.add(newClient);
+                //changed!
+                offlineClients.remove(offlineclient);
+                return true;
+            }
+        }
 
-        return true;
+        this.clientsPairList.add(newClient);
+        return  true;
+
     }
 
-    public static ArrayList<ClientsPair> getClientsPairList() {
+    public  ArrayList<ClientsPair> getClientsPairList() {
         return clientsPairList;
     }
-    public static void sendMsgAll(String currentTime,String username, String pureMsg, int port){
+
+    public  void sendMsgAll(String currentTime,String username, String pureMsg, int port){
         String msg = currentTime + " " + username + ": " + pureMsg;
         if(pureMsg.equals("exit")){
             for(ClientsPair client:clientsPairList){
@@ -44,15 +57,18 @@ public class OnlineClients {
             if(client.getPort()!=port) client.getOutMsg().println(msg);
         }
     }
-    public static void removeClient(String username){
 
-        for (ClientsPair client:clientsPairList){
-            if(username.equals(client.getName())) {
-                client.setOnlineStatus(false);
-                break;
-            }
-        }
 
+    public  void setOffline(String username){
+        offlineClients.add(username);
+    }
+
+    public  ArrayList<String> getOfflineClients() {
+        return offlineClients;
+    }
+
+    public  void removeClient(ClientsPair client){
+        clientsPairList.remove(client);
     }
 
 

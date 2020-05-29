@@ -24,7 +24,7 @@ public class ThreadClient  extends  Thread{
 
             try {
                 input.join();
-                output.join();
+                output.interrupt();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

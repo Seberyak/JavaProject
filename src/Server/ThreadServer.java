@@ -20,7 +20,6 @@ public class ThreadServer implements Runnable {
 
     @Override
     public void run() {
-        OnlineClients onlineClients = new OnlineClients();
         try {
 
             Socket socket = client.getSocket();
@@ -33,15 +32,14 @@ public class ThreadServer implements Runnable {
 //            System.out.println("Server port " + socket.getLocalPort());
 
             BufferInputThread input = new BufferInputThread(client);
-//        Sever.ScannerThread output = new ScannerThread(scanner,out);
+
             input.start();
 
 
-//        output.start();
+
 
             input.join();
-//        System.out.println("input interapted: " + input.getState());
-//        output.interrupt();
+
 
             in.close();
             out.close();
@@ -52,13 +50,4 @@ public class ThreadServer implements Runnable {
         }
     }
 
-
-//    public static void main(String[] args) throws IOException, InterruptedException {
-
-//        ServerSocket server = new ServerSocket(4321);
-//
-//        System.out.println("Waiting for the client request");
-//        Socket socket = server.accept();
-
-//    }
 }

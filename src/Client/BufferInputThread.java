@@ -23,7 +23,8 @@ public class BufferInputThread extends Thread {
         String in;
 //        System.out.println(Thread.currentThread().getName());
         System.out.println("Welcome! You've joined to our chat.");
-        while (!isInterrupted()) {
+        boolean customBreak = false;
+        while (!isInterrupted() && !customBreak) {
             try {
                 in = bufferedReader.readLine();
                 if(in!=null){
@@ -34,6 +35,7 @@ public class BufferInputThread extends Thread {
 //                }
             } catch (IOException e) {
                 e.printStackTrace();
+                customBreak = true;
             }
 
         }

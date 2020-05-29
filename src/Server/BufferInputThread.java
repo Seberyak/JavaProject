@@ -46,8 +46,8 @@ public class BufferInputThread extends Thread {
 //            e.printStackTrace();
 //        }
         Thread.currentThread().setName("BufferInput Thread from "+client.getName());
-
-        while (!isInterrupted()) {
+        boolean customBreak = false;
+        while (!isInterrupted() && !customBreak) {
             try {
                 in = bufferedReader.readLine();
 
@@ -56,23 +56,25 @@ public class BufferInputThread extends Thread {
                 String currentTime = formatter.format(date);
 
                 // send msg to all
-                OnlineClients.sendMsgAll(currentTime, client.getName(), in, client.getPort());
+                OnlineClients.getInstance().sendMsgAll(currentTime, client.getName(), in, client.getPort());
 
                 System.out.println(currentTime + " " + client.getName() + ": " + in);
                 if (in.equals("exit")) {
-                    OnlineClients.removeClient(client.getName());
-                    bufferedReader.close();
-                    printWriter.close();
-                    client.getSocket().close();
+                    OnlineClients.getInstance().setOffline(client.getName());
+                    OnlineClients.getInstance().removeClient(client);
+//                    bufferedReader.close();
+//                    printWriter.close();
+//                    client.getSocket().close();
                     break;
                 }
             } catch (IOException e) {
                 e.printStackTrace();
+                customBreak = true;
             }
 
         }
         String ClientLeftMessageForServer = "";
-        for (ClientsPair client : OnlineClients.getClientsPairList()) {
+        for (ClientsPair client : OnlineClients.getInstance().getClientsPairList()) {
             if (client.getPort() == client.getSocket().getPort()) {
                 ClientLeftMessageForServer = client.getName() + " left the chat.";
             }

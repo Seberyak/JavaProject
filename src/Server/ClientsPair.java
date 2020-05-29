@@ -10,19 +10,17 @@ public class ClientsPair {
     private Socket socket;
     private int port;
     private String name;
-    private boolean OnlineStatus = false;
     private PrintWriter outMsg;
     private BufferedReader inMsg;
 
     public ClientsPair(Socket socket,int port){
         this.socket = socket;
         this.port = port;
-        this.OnlineStatus = true;
         try {
             this.outMsg = new PrintWriter(socket.getOutputStream(),true);
             this.inMsg = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             outMsg.println("Server: Hello in our ChatRoom! Before joining chat please tell us your name...");
-//            outMsg.println("Type your name first");
+
             name = inMsg.readLine();
         } catch (IOException e) {
             e.printStackTrace();
@@ -42,9 +40,7 @@ public class ClientsPair {
         return port;
     }
 
-    public void setOnlineStatus(boolean onlineStatus) { OnlineStatus = onlineStatus; }
 
-    public boolean isOnline() {      return OnlineStatus;    }
 
     public void setPort(int port) {
         this.port = port;
