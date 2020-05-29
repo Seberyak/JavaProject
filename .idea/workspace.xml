@@ -22,12 +22,9 @@
     <list default="true" id="6202ad5b-fef1-48f2-b83c-f3799986ce68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/BufferInputThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Server/BufferInputThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/BufferInputThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client/ThreadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/ThreadClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/ScannerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/ScannerThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Server/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/BufferInputThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/ClientsPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/ClientsPair.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Server/OnlineClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/OnlineClients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/OtarasSocketServerThreaded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/OtarasSocketServerThreaded.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Server/ThreadServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/ThreadServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,6 +173,7 @@
       <workItem from="1590688819262" duration="1219000" />
       <workItem from="1590730005520" duration="1819000" />
       <workItem from="1590745764027" duration="1265000" />
+      <workItem from="1590747388889" duration="3126000" />
     </task>
     <servers />
   </component>

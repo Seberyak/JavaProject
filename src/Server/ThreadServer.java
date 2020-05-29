@@ -8,6 +8,8 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ThreadServer implements Runnable {
 
@@ -28,6 +30,11 @@ public class ThreadServer implements Runnable {
 
 
             System.out.println("Client with port " + socket.getPort() + " - joined the ChatRoom.");
+            System.out.println("Client with port " + socket.getPort() + " - set name to: " + client.getName());
+
+
+
+            OnlineClients.getInstance().sendMsgAll(new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()), "Chat",client.getName()+" join the chat",0);
 //            System.out.println("Client port " + socket.getPort());
 //            System.out.println("Server port " + socket.getLocalPort());
 

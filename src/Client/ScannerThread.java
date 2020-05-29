@@ -20,7 +20,7 @@ public class ScannerThread extends Thread{
     public void run() {
         Thread.currentThread().setName("Client.ScannerThread");
         String outMessage;
-        System.out.println(Thread.currentThread().getName());
+//        System.out.println(Thread.currentThread().getName());
 
         while (!isInterrupted()){
 

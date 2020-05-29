@@ -46,13 +46,16 @@ public class OnlineClients {
 
     public  void sendMsgAll(String currentTime,String username, String pureMsg, int port){
         String msg = currentTime + " " + username + ": " + pureMsg;
+        String name="";
         if(pureMsg.equals("exit")){
             for(ClientsPair client:clientsPairList){
                 if(client.getPort()==port){
                     msg = "Chat: " + client.getName() + " left the chat.";
+                    name = client.getName();
                 }
             }
         }
+        if(!name.isEmpty()) System.out.println(name+ " left the chat.");
         for(ClientsPair client:clientsPairList){
             if(client.getPort()!=port) client.getOutMsg().println(msg);
         }

@@ -58,7 +58,10 @@ public class BufferInputThread extends Thread {
                 // send msg to all
                 OnlineClients.getInstance().sendMsgAll(currentTime, client.getName(), in, client.getPort());
 
-                System.out.println(currentTime + " " + client.getName() + ": " + in);
+
+
+//                System.out.println(currentTime + " " + client.getName() + ": " + in);
+
                 if (in.equals("exit")) {
                     OnlineClients.getInstance().setOffline(client.getName());
                     OnlineClients.getInstance().removeClient(client);
@@ -73,12 +76,12 @@ public class BufferInputThread extends Thread {
             }
 
         }
-        String ClientLeftMessageForServer = "";
-        for (ClientsPair client : OnlineClients.getInstance().getClientsPairList()) {
-            if (client.getPort() == client.getSocket().getPort()) {
-                ClientLeftMessageForServer = client.getName() + " left the chat.";
-            }
-        }
-        System.out.println(ClientLeftMessageForServer);
+//        String ClientLeftMessageForServer = "";
+//        for (ClientsPair client : OnlineClients.getInstance().getClientsPairList()) {
+//            if (client.getPort() == client.getSocket().getPort()) {
+//                ClientLeftMessageForServer = client.getName() + " left the chat.";
+//            }
+//        }
+//        System.out.println(ClientLeftMessageForServer);
     }
 }
