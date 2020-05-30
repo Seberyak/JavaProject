@@ -6,16 +6,12 @@ import java.net.Socket;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
-
 public class BufferInputThread extends Thread {
     BufferedReader bufferedReader;
 
-
     public BufferInputThread(BufferedReader sc) {
         this.bufferedReader = sc;
-
     }
-
 
     @Override
     public void run() {
@@ -27,7 +23,7 @@ public class BufferInputThread extends Thread {
         while (!isInterrupted() && !customBreak) {
             try {
                 in = bufferedReader.readLine();
-                if(in!=null){
+                if (in != null) {
                     System.out.println(in);
                 }
 //                if(in.equals("exit")) {
@@ -37,9 +33,6 @@ public class BufferInputThread extends Thread {
                 e.printStackTrace();
                 customBreak = true;
             }
-
         }
-
-
     }
 }

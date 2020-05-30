@@ -3,9 +3,10 @@ package Sever;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class ScannerThread extends Thread{
+public class ScannerThread extends Thread {
     Scanner scanner;
     PrintWriter out;
+
     public ScannerThread(Scanner myObj, PrintWriter myObj2) {
         this.scanner = myObj;
         this.out = myObj2;
@@ -16,11 +17,12 @@ public class ScannerThread extends Thread{
         Thread.currentThread().setName("Client.ScannerThread");
         String outMessage;
         System.out.println(Thread.currentThread().getName());
-        while (true){
+        while (true) {
             outMessage = scanner.nextLine();
             out.println(outMessage);
-            if(outMessage.equals("exit")) { break;}
-
+            if (outMessage.equals("exit")) {
+                break;
+            }
 //                System.out.println("System input : "+in);
         }
 //    out.close();
@@ -28,8 +30,6 @@ public class ScannerThread extends Thread{
         scanner.close();
         System.out.println("Inside Server.ScannerThread scanner closed");
 //    out.close();
-
-
     }
 
 }

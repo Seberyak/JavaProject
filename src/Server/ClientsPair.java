@@ -13,11 +13,11 @@ public class ClientsPair {
     private PrintWriter outMsg;
     private BufferedReader inMsg;
 
-    public ClientsPair(Socket socket,int port){
+    public ClientsPair(Socket socket, int port) {
         this.socket = socket;
         this.port = port;
         try {
-            this.outMsg = new PrintWriter(socket.getOutputStream(),true);
+            this.outMsg = new PrintWriter(socket.getOutputStream(), true);
             this.inMsg = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             outMsg.println("Server: Hello in our ChatRoom! Before joining chat please tell us your name...");
 
@@ -25,7 +25,6 @@ public class ClientsPair {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     public Socket getSocket() {
@@ -41,14 +40,17 @@ public class ClientsPair {
     }
 
 
-
     public void setPort(int port) {
         this.port = port;
     }
 
-    public PrintWriter getOutMsg() {        return outMsg;    }
+    public PrintWriter getOutMsg() {
+        return outMsg;
+    }
 
-    public BufferedReader getInMsg() {        return inMsg;    }
+    public BufferedReader getInMsg() {
+        return inMsg;
+    }
 
     public String getName() {
         return name;

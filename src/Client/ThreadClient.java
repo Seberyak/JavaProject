@@ -7,18 +7,18 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class ThreadClient  extends  Thread{
+public class ThreadClient extends Thread {
     @Override
     public void run() {
         Socket socket;
         try {
             socket = new Socket("localhost", 4321);
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            PrintWriter printWriter = new PrintWriter(socket.getOutputStream(),true);
+            PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
             Scanner scanner = new Scanner(new InputStreamReader(System.in));
 
             BufferInputThread input = new BufferInputThread(bufferedReader);
-            ScannerThread output = new ScannerThread(scanner,printWriter,input);
+            ScannerThread output = new ScannerThread(scanner, printWriter, input);
             input.start();
             output.start();
 
@@ -33,7 +33,6 @@ public class ThreadClient  extends  Thread{
             System.out.println("________________________");
             System.out.println("Chat: You left the chat.");
 
-
             printWriter.close();
             scanner.close();
             bufferedReader.close();
@@ -41,9 +40,5 @@ public class ThreadClient  extends  Thread{
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
-
     }
-
 }

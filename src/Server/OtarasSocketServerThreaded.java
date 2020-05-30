@@ -15,20 +15,19 @@ public class OtarasSocketServerThreaded {
         ServerSocket server = new ServerSocket(PORT);
         System.out.println(" Waiting for the client request");
 
-        while(true) {
+        while (true) {
             Socket socket = server.accept();
+            ClientsPair clientsPair;
 
-            ClientsPair clientsPair ;
-            while (true){
-                clientsPair = new ClientsPair(socket,socket.getPort());
+            while (true) {
+                clientsPair = new ClientsPair(socket, socket.getPort());
                 //if client added to list, break this loop
-                if(OnlineClients.getInstance().addClientToList(clientsPair)) break;
+                if (OnlineClients.getInstance().addClientToList(clientsPair)) break;
             }
 
             Thread thread = new Thread(new ThreadServer(clientsPair));
             thread.start();
         }
-
 //        server.close();
     }
 }

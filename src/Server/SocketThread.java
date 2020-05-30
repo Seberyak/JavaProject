@@ -20,12 +20,12 @@ class SocketThread implements Runnable {
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 
-            while(true) {
+            while (true) {
                 String message = in.readLine();
 
                 if (message.equalsIgnoreCase("hello")) {
                     out.println("Hi Client");
-                } else if(message.equalsIgnoreCase("exit")) {
+                } else if (message.equalsIgnoreCase("exit")) {
                     out.println("Bye Client, server shutting down!");
                     break;
                 } else {

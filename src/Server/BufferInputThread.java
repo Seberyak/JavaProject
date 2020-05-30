@@ -9,26 +9,21 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
-
 public class BufferInputThread extends Thread {
     BufferedReader bufferedReader;
     PrintWriter printWriter;
     ClientsPair client;
 
     public BufferInputThread(ClientsPair client) {
-        this.client =   client;
+        this.client = client;
         this.printWriter = client.getOutMsg();
         this.bufferedReader = client.getInMsg();
-
     }
-
-
 
     @Override
     public void run() {
         Thread.currentThread().setName("Client.BufferInputThread");
         String in;
-
 
 //        System.out.println(Thread.currentThread().getName());
 //        try {
@@ -45,7 +40,7 @@ public class BufferInputThread extends Thread {
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
-        Thread.currentThread().setName("BufferInput Thread from "+client.getName());
+        Thread.currentThread().setName("BufferInput Thread from " + client.getName());
         boolean customBreak = false;
         while (!isInterrupted() && !customBreak) {
             try {
@@ -57,8 +52,7 @@ public class BufferInputThread extends Thread {
 
                 // send msg to all
                 OnlineClients.getInstance().sendMsgAll(currentTime, client.getName(), in, client.getPort());
-                System.out.println(currentTime+" "+client.getName()+" : "+in);
-
+                System.out.println(currentTime + " " + client.getName() + " : " + in);
 
 //                System.out.println(currentTime + " " + client.getName() + ": " + in);
 
@@ -74,7 +68,6 @@ public class BufferInputThread extends Thread {
                 e.printStackTrace();
                 customBreak = true;
             }
-
         }
 //        String ClientLeftMessageForServer = "";
 //        for (ClientsPair client : OnlineClients.getInstance().getClientsPairList()) {
