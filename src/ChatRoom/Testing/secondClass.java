@@ -1,9 +1,9 @@
-package Testing;
+package ChatRoom.Testing;
 
-public class oneClass  extends  Thread{
+public class secondClass extends  Thread{
     MyObj Logic;
 
-    public oneClass(MyObj logic) {
+    public secondClass(MyObj logic) {
         Logic = logic;
     }
 

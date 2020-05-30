@@ -1,4 +1,4 @@
-package Server;
+package ChatRoom.Server;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,7 +19,7 @@ public class ClientsPair {
         try {
             this.outMsg = new PrintWriter(socket.getOutputStream(), true);
             this.inMsg = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            outMsg.println("Server: Hello in our ChatRoom! Before joining chat please tell us your name...");
+            outMsg.println("ChatRoom.Server: Hello in our ChatRoom! Before joining chat please tell us your name...");
 
             name = inMsg.readLine();
         } catch (IOException e) {

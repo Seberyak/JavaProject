@@ -1,10 +1,7 @@
-package Client;
+package ChatRoom.Client;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.net.Socket;
-import java.sql.SQLOutput;
-import java.util.Scanner;
 
 public class BufferInputThread extends Thread {
     BufferedReader bufferedReader;
@@ -15,7 +12,7 @@ public class BufferInputThread extends Thread {
 
     @Override
     public void run() {
-        Thread.currentThread().setName("Client.BufferInputThread");
+        Thread.currentThread().setName("ChatRoom.Client.BufferInputThread");
         String in;
 //        System.out.println(Thread.currentThread().getName());
         System.out.println("Welcome! You've joined to our chat.");

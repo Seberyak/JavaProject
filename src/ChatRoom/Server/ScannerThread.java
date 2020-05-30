@@ -14,7 +14,7 @@ public class ScannerThread extends Thread {
 
     @Override
     public void run() {
-        Thread.currentThread().setName("Client.ScannerThread");
+        Thread.currentThread().setName("ChatRoom.Client.ScannerThread");
         String outMessage;
         System.out.println(Thread.currentThread().getName());
         while (true) {
@@ -26,9 +26,9 @@ public class ScannerThread extends Thread {
 //                System.out.println("System input : "+in);
         }
 //    out.close();
-//    System.out.println("Inside Client.ScannerThread: out closed ");
+//    System.out.println("Inside ChatRoom.Client.ScannerThread: out closed ");
         scanner.close();
-        System.out.println("Inside Server.ScannerThread scanner closed");
+        System.out.println("Inside ChatRoom.Server.ScannerThread scanner closed");
 //    out.close();
     }
 

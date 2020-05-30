@@ -1,4 +1,4 @@
-package Testing;
+package ChatRoom.Testing;
 
 public class MyObj {
     Integer MyObj = null;

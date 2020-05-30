@@ -1,30 +1,30 @@
-
+package ChatRoom.Server;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-/**
- * This class implements java Socket server in a multi-threaded fashion.
- * To test use telnet(s).
- */
-public class SocketServerThreaded {
-
+public class OtarasSocketServerThreaded {
     //socket server port on which it will listen
     private static final int PORT = 4321;
 
     public static void main(String[] args) throws IOException {
         ServerSocket server = new ServerSocket(PORT);
-
         System.out.println(" Waiting for the client request");
 
-        while(true) {
+        while (true) {
             Socket socket = server.accept();
+            ClientsPair clientsPair;
 
-            Thread thread = new Thread(new SocketThread(socket));
+            while (true) {
+                clientsPair = new ClientsPair(socket, socket.getPort());
+                //if client added to list, break this loop
+                if (OnlineClients.getInstance().addClientToList(clientsPair)) break;
+            }
+
+            Thread thread = new Thread(new ThreadServer(clientsPair));
             thread.start();
         }
-
 //        server.close();
     }
 }

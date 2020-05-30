@@ -1,4 +1,4 @@
-package Client;
+package ChatRoom.Client;
 
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -17,7 +17,7 @@ public class ScannerThread extends Thread {
 
     @Override
     public void run() {
-        Thread.currentThread().setName("Client.ScannerThread");
+        Thread.currentThread().setName("ChatRoom.Client.ScannerThread");
         String outMessage;
 
         while (!isInterrupted()) {

@@ -1,13 +1,10 @@
-package Server;
+package ChatRoom.Server;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.net.Socket;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.Scanner;
 
 public class BufferInputThread extends Thread {
     BufferedReader bufferedReader;
@@ -22,7 +19,7 @@ public class BufferInputThread extends Thread {
 
     @Override
     public void run() {
-        Thread.currentThread().setName("Client.BufferInputThread");
+        Thread.currentThread().setName("ChatRoom.Client.BufferInputThread");
         String in;
 
 //        System.out.println(Thread.currentThread().getName());
@@ -36,7 +33,7 @@ public class BufferInputThread extends Thread {
 //                }
 //            }
 //            printWriter.println("Chat: Welcome " + username + ". You're in chat now.");
-//            System.out.println("Client with port " + myport + " - set name to: " + username);
+//            System.out.println("ChatRoom.Client with port " + myport + " - set name to: " + username);
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }

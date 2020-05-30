@@ -21,8 +21,31 @@
   <component name="ChangeListManager">
     <list default="true" id="6202ad5b-fef1-48f2-b83c-f3799986ce68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/BufferInputThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Server/BufferInputThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/BufferInputThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Client/BufferInputThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/ScannerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Client/ScannerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/ThreadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Client/ThreadClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClientHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClientWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/BufferInputThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/ClientsPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/ClientsPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/OnlineClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/OnlineClients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/OtarasSocketServerThreaded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/OtarasSocketServerThreaded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/ScannerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/ScannerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/SocketThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/SocketThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/ThreadServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/ThreadServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocketClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocketServerThreaded.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SocketThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testing/GlobalClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Testing/GlobalClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testing/MyObj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Testing/MyObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testing/oneClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Testing/oneClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testing/secondClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Testing/secondClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +71,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -71,19 +98,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.OtarasSocketServerThreaded">
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Client.Client" />
-      <module name="JavaProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-14.0.1" />
       <option name="MAIN_CLASS_NAME" value="Client" />
@@ -99,12 +113,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OtarasSocketServerThreaded" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Server.OtarasSocketServerThreaded" />
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatRoom.Client.Client" />
       <module name="JavaProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Server.*" />
+          <option name="PATTERN" value="ChatRoom.Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OtarasSocketServerThreaded" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatRoom.Server.OtarasSocketServerThreaded" />
+      <module name="JavaProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ChatRoom.Server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +140,11 @@
       </method>
     </configuration>
     <configuration name="ThreadServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Server.ThreadServer" />
+      <option name="MAIN_CLASS_NAME" value="ChatRoom.Server.ThreadServer" />
       <module name="JavaProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Server.*" />
+          <option name="PATTERN" value="ChatRoom.Server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,6 +199,7 @@
       <workItem from="1590745764027" duration="1265000" />
       <workItem from="1590747388889" duration="3126000" />
       <workItem from="1590827267295" duration="1448000" />
+      <workItem from="1590848329141" duration="2211000" />
     </task>
     <servers />
   </component>
@@ -290,6 +318,10 @@
     <state x="449" y="536" key="com.intellij.ide.util.TipDialog/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590597733306" />
     <state x="371" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741/1366.0.1920.1080@67.27.1299.741" timestamp="1590595355899" />
     <state x="371" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1590318073955" />
+    <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590848605887">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.834@0.0.1536.834" timestamp="1590848605887" />
     <state x="726" y="454" width="457" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590599884002">
       <screen x="0" y="339" width="1920" height="741" />
     </state>

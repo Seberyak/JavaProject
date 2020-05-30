@@ -1,4 +1,4 @@
-package Server;
+package ChatRoom.Server;
 
 import java.util.ArrayList;
 
