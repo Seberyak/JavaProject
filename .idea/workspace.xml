@@ -22,10 +22,7 @@
     <list default="true" id="6202ad5b-fef1-48f2-b83c-f3799986ce68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/BufferInputThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Server/BufferInputThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client/ScannerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/ScannerThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Server/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/BufferInputThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/OnlineClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/OnlineClients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/ThreadServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/ThreadServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +171,7 @@
       <workItem from="1590730005520" duration="1819000" />
       <workItem from="1590745764027" duration="1265000" />
       <workItem from="1590747388889" duration="3126000" />
+      <workItem from="1590827267295" duration="1448000" />
     </task>
     <servers />
   </component>
@@ -211,6 +209,10 @@
     <state x="540" y="86" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1590608075937" />
     <state x="675" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590657933013" />
     <state x="524" y="103" width="541" height="587" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1590238303292" />
+    <state x="743" y="414" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590827929446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="414" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1590827929446" />
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590234989321">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

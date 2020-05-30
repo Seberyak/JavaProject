@@ -57,7 +57,7 @@ public class BufferInputThread extends Thread {
 
                 // send msg to all
                 OnlineClients.getInstance().sendMsgAll(currentTime, client.getName(), in, client.getPort());
-
+                System.out.println(currentTime+" "+client.getName()+" : "+in);
 
 
 //                System.out.println(currentTime + " " + client.getName() + ": " + in);
