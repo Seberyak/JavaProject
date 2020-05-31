@@ -7,6 +7,8 @@ import java.net.Socket;
 public class OtarasSocketServerThreaded {
     //socket server port on which it will listen
     private static final int PORT = 4321;
+    //make static SQL connection for server, use it in BufferInputThread,fill SQL_Connection arguments
+    public static SQL_Connection conn = new SQL_Connection("user","password");
 
     public static void main(String[] args) throws IOException {
         ServerSocket server = new ServerSocket(PORT);
