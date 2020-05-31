@@ -21,38 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6202ad5b-fef1-48f2-b83c-f3799986ce68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client/BufferInputThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client/ScannerThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client/ThreadClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Client2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ClientWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/BufferInputThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/ClientsPair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/OnlineClients.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/OtarasSocketServerThreaded.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/SocketThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Server/ThreadServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Sever/ScannerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/Sever/ScannerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/SocketClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/SocketServerThreaded.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/SocketThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Testing/GlobalClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Testing/MyObj.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Testing/oneClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Testing/secondClass.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChatRoom/Server/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/BufferInputThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChatRoom/Server/OtarasSocketServerThreaded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/OtarasSocketServerThreaded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChatRoom/UnitTests/ConnectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/UnitTests/ConnectionTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,17 +76,10 @@
       <recent name="Sever" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OtarasSocketServerThreaded">
+  <component name="RunManager" selected="JUnit.ConnectionTests">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-14.0.1" />
       <option name="MAIN_CLASS_NAME" value="Client" />
-      <module name="JavaProject" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Client2" />
       <module name="JavaProject" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,20 +137,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConnectionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ChatRoom.UnitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ChatRoom.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="ChatRoom.UnitTests.ConnectionTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Client" />
-      <item itemvalue="Application.Client2" />
       <item itemvalue="Application.OtarasSocketServerThreaded" />
       <item itemvalue="Application.ThreadServer" />
       <item itemvalue="Application.SQL_Connection" />
+      <item itemvalue="JUnit.ConnectionTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConnectionTests" />
         <item itemvalue="Application.OtarasSocketServerThreaded" />
         <item itemvalue="Application.SQL_Connection" />
         <item itemvalue="Application.ThreadServer" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Client2" />
       </list>
     </recent_temporary>
   </component>
@@ -254,10 +233,10 @@
     </state>
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1590600957290" />
     <state x="279" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590914835292" />
-    <state x="675" y="107" width="541" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1590657933013">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="540" y="86" width="541" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1590919778744">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="540" y="86" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1590608075937" />
+    <state x="540" y="86" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1590919778744" />
     <state x="675" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590657933013" />
     <state x="524" y="103" width="541" height="587" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1590238303292" />
     <state x="743" y="414" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590827929446">
@@ -273,34 +252,34 @@
     </state>
     <state x="639" y="178" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590915152066" />
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1590222961548" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1590916823720">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1590921205432">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590668901658" />
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590921205432" />
     <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
     <state width="1874" height="162" key="GridCell.Tab.0.bottom/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1590255665235" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1590916823720">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1590921205431">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1590668901658" />
+    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1590921205431" />
     <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
     <state width="1874" height="162" key="GridCell.Tab.0.center/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.center/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1590255665233" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1590916823720">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1590921205431">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1590668901658" />
+    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1590921205431" />
     <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
     <state width="1874" height="162" key="GridCell.Tab.0.left/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086446" />
     <state width="1874" height="196" key="GridCell.Tab.0.left/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1590255665232" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1590916823720">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1590921205432">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1590668901658" />
+    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1590921205432" />
     <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
     <state width="1874" height="162" key="GridCell.Tab.0.right/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.right/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />

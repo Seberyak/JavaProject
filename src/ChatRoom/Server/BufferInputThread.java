@@ -52,7 +52,7 @@ public class BufferInputThread extends Thread {
                 // send msg to all
                 OnlineClients.getInstance().sendMsgAll(currentTime, client.getName(), in, client.getPort());
                 //send to db
-                OtarasSocketServerThreaded.conn.insertExample(client.getName(),in,new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()));
+//                OtarasSocketServerThreaded.conn.insertExample(client.getName(),in,new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()));
                 //print on server
                 System.out.println(currentTime + " " + client.getName() + " : " + in);
 
