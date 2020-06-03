@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6202ad5b-fef1-48f2-b83c-f3799986ce68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatRoom/Server/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/BufferInputThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatRoom/Server/OtarasSocketServerThreaded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/OtarasSocketServerThreaded.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChatRoom/UnitTests/ConnectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/UnitTests/ConnectionTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,14 +75,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ConnectionTests">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-14.0.1" />
-      <option name="MAIN_CLASS_NAME" value="Client" />
-      <module name="JavaProject" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatRoom.Client.Client" />
       <module name="JavaProject" />
@@ -152,20 +142,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConnectionTests.ServerTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ChatRoom.UnitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ChatRoom.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="ChatRoom.UnitTests.ConnectionTests" />
+      <option name="METHOD_NAME" value="ServerTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Client" />
       <item itemvalue="Application.OtarasSocketServerThreaded" />
       <item itemvalue="Application.ThreadServer" />
       <item itemvalue="Application.SQL_Connection" />
       <item itemvalue="JUnit.ConnectionTests" />
+      <item itemvalue="JUnit.ConnectionTests.ServerTest2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ConnectionTests" />
         <item itemvalue="Application.OtarasSocketServerThreaded" />
+        <item itemvalue="JUnit.ConnectionTests.ServerTest2" />
         <item itemvalue="Application.SQL_Connection" />
         <item itemvalue="Application.ThreadServer" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -201,6 +207,8 @@
       <workItem from="1590827267295" duration="1448000" />
       <workItem from="1590848329141" duration="2211000" />
       <workItem from="1590910716331" duration="5897000" />
+      <workItem from="1591200094197" duration="46000" />
+      <workItem from="1591200277212" duration="3553000" />
     </task>
     <servers />
   </component>
@@ -239,6 +247,10 @@
     <state x="540" y="86" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1590919778744" />
     <state x="675" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590657933013" />
     <state x="524" y="103" width="541" height="587" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1590238303292" />
+    <state x="449" y="153" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591200117122">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="153" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1591200117122" />
     <state x="743" y="414" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590827929446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -252,34 +264,34 @@
     </state>
     <state x="639" y="178" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590915152066" />
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1590222961548" />
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1590921205432">
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1591219217505">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1590921205432" />
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1591219217505" />
     <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
     <state width="1874" height="162" key="GridCell.Tab.0.bottom/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1590255665235" />
-    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1590921205431">
+    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1591219217505">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1590921205431" />
+    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1591219217505" />
     <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
     <state width="1874" height="162" key="GridCell.Tab.0.center/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.center/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1590255665233" />
-    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1590921205431">
+    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1591219217505">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1590921205431" />
+    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1591219217505" />
     <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
     <state width="1874" height="162" key="GridCell.Tab.0.left/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086446" />
     <state width="1874" height="196" key="GridCell.Tab.0.left/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1590255665232" />
-    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1590921205432">
+    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1591219217505">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1590921205432" />
+    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1591219217505" />
     <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
     <state width="1874" height="162" key="GridCell.Tab.0.right/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.right/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
