@@ -2,10 +2,23 @@ package ChatRoom.Server;
 
 import java.sql.*;
 
-
+/**
+ * Class SQL_Connection connects to DB and sends
+ * messages to store it.
+ *
+ * @author Daniel Barbakadze.
+ * @author Valera Liparteliani.
+ */
 public class SQL_Connection {
     private Connection connection;
 
+    /**
+     * Variables user and password is used to
+     * connect to DataBase.
+     *
+     * @param user is DataBase's username.
+     * @param password is DataBase's password.
+     */
     public SQL_Connection(String user, String password) {
         try {
             connection = DriverManager.getConnection(
@@ -17,6 +30,15 @@ public class SQL_Connection {
         }
     }
 
+    /**
+     * Method insertExample creates query using
+     * Clients username, message and data to store
+     * the information into DataBase Table.
+     *
+     * @param username is Client's username.
+     * @param message is Client's message.
+     * @param date is Client's date.
+     */
     public void insertExample(String username, String message, String date) {
         try (PreparedStatement statement = connection.prepareStatement(
                 "INSERT INTO chat(username, message, date) VALUES(?, ?, ?)")) {
@@ -31,6 +53,12 @@ public class SQL_Connection {
         }
     }
 
+    /**
+     * Method selectExample would be used to
+     * get every information from DataBase.
+     * But this method currently doesn't exist.
+     *
+     */
     public void selectExample() {
         try (Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery("SELECT * FROM chat")) {
@@ -48,12 +76,5 @@ public class SQL_Connection {
             e.printStackTrace();
         }
     }
-
-//    public static void main(String[] args) {
-//        SQL_Test sql_test = new SQL_Test();
-//
-//        sql_test.insertExample("Admin", "Hello world!", new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()));
-//        sql_test.selectExample();
-//    }
 
 }

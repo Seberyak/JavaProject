@@ -10,24 +10,24 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * ConnectionStartTest tests if connection starts as it's predicted,
+ * ConnectionEndTest tests if connection ends as it's predicted,
  * also it checks if clients receive the messages sent from the
  * server and they also are able to see the messages sent from
  * each other to be ChatRoom fully proper working.
  *
  */
-class ConnectionStartTest {
+class ConnectionEndTest {
     @BeforeAll
     static void beforeTests() {
-        System.out.println("Connection Start Testing started");
+        System.out.println("Connection End Testing started");
     }
 
     @AfterAll
     static void afterTests() {
-        System.out.println("Connection Start Testing finished");
+        System.out.println("Connection End Testing finished");
     }
 
     /**
@@ -36,11 +36,11 @@ class ConnectionStartTest {
      * predefined name and message as a variables, that is given
      * in constructor.
      *
-     * printWriter sends this two variable to server.
+     * printWriter sends this two variable to server. After that
      * printWriter send exit message from both client's thread.
      *
      * Actually, server is imitated here too and it's called
-     * CustomBufferThreadInput as a Custom class that receives
+     * CustomBufferThreadInputExit as a Custom class that receives
      * client's name and message and process it.
      *
      */
@@ -65,7 +65,7 @@ class ConnectionStartTest {
                 printWriter.println(this.name);
                 printWriter.println(this.message);
 
-                CustomBufferThreadInput input = new CustomBufferThreadInput(bufferedReader, this.name);
+                CustomBufferThreadInputExit input = new CustomBufferThreadInputExit(bufferedReader, this.name);
 
                 printWriter.println("exit");
 
@@ -86,26 +86,26 @@ class ConnectionStartTest {
     }
 
     /**
-     * CustomBufferThreadInput is imitated Server class
+     * CustomBufferThreadInputExit is imitated Server class
      * that receives messages from imitated Client class,
      * process it as real Server does and checks if actions
      * is the same as it was predicted.
      *
-     * In this particular test case it checks if when received
-     * name equals Daniel message must be predefined welcome
-     * pattern or the message that second client send. The same
-     * for the second client, It's name and welcome pattern
-     * text and first client's first message to be sure that
-     * these two client receive messages from each other and
-     * from the server too.
+     * In this particular test case it checks that message must be
+     * predefined welcome/welcome back pattern or info that second client
+     * left the chat, when received name equals first client's name.
+     * To second client, client's name and welcome/welcome pattern
+     * and first client's first message to be sure that these two
+     * client receive messages and exit info from each other, also
+     * to be sure that both of them receives messages from the server too.
      *
      */
-    static class CustomBufferThreadInput extends Thread {
+    static class CustomBufferThreadInputExit extends Thread {
         BufferedReader bufferedReader;
         String name;
         int counter = 0;
 
-        public CustomBufferThreadInput(BufferedReader sc, String name) {
+        public CustomBufferThreadInputExit(BufferedReader sc, String name) {
             this.bufferedReader = sc;
             this.name = name;
         }
@@ -125,18 +125,17 @@ class ConnectionStartTest {
                     }
 
                     if (this.name.equals("Daniel")) {
+                        assert in != null;
                         if (this.counter == 0) {
-                            assert in != null;
-                            assertTrue(in.contains("Daniel join the chat"));
+                            assertTrue(in.contains("Otari join the chat") || in.contains("Otari welcome back!"));
                         } else {
-                            assert in != null;
-                            assertTrue(in.contains("Gagimarjos"));
+                            assertTrue(in.contains("Otari left the chat"));
                         }
                     }
                     if (this.name.equals("Otari")) {
                         if (this.counter == 0) {
                             assert in != null;
-                            assertTrue(in.contains("Otari join the chat"));
+                            assertTrue(in.contains("Daniel join the chat") || in.contains("Daniel welcome back!"));
                         } else {
                             assert in != null;
                             assertTrue(in.contains("Gamarjoba"));
@@ -160,11 +159,10 @@ class ConnectionStartTest {
      *
      */
     @Test
-    void ServerTest1() {
-        Thread thread1 = new Thread(new ClientThread("Daniel", "Gamarjoba"));
-        thread1.start();
-        Thread thread2 = new Thread(new ClientThread("Otari", "Gagimarjos"));
-        thread2.start();
+    void ServerTest2() {
+        Thread thread3 = new Thread(new ClientThread("Daniel", "Gamarjoba"));
+        thread3.start();
+        Thread thread4 = new Thread(new ClientThread("Otari", "exit"));
+        thread4.start();
     }
-
 }

@@ -11,34 +11,34 @@ public class BufferInputThread extends Thread {
     PrintWriter printWriter;
     ClientsPair client;
 
+    /**
+     * Variable client is used to get Class ClientsPair
+     * instance and also get  printWriter and bufferedReader
+     * from the same client's thread.
+     *
+     * @param client is Class ClientsPair instance.
+     */
     public BufferInputThread(ClientsPair client) {
         this.client = client;
         this.printWriter = client.getOutMsg();
         this.bufferedReader = client.getInMsg();
     }
 
-
-
+    /**
+     * Function run Overrides Thread.run(), that starts new thread.
+     * This function reads client's input, formats it and send it
+     * to all online clients in ChatRoom, saves  this message in
+     * DataBase and prints it in SocketServerThreaded terminal.
+     *
+     * If client enters exit this client's status turns into offline
+     * and will be removed from online clients list.
+     *
+     */
     @Override
     public void run() {
         Thread.currentThread().setName("ChatRoom.Client.BufferInputThread");
         String in;
 
-//        System.out.println(Thread.currentThread().getName());
-//        try {
-//            String name = bufferedReader.readLine();
-//            for (ClientsPair client : OnlineClients.getClientsPairList()) {
-//                if (client.getPort() == socket.getPort()) {
-//                    client.setName(name);
-//                    username = name;
-//                    myport = client.getPort();
-//                }
-//            }
-//            printWriter.println("Chat: Welcome " + username + ". You're in chat now.");
-//            System.out.println("ChatRoom.Client with port " + myport + " - set name to: " + username);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
         Thread.currentThread().setName("BufferInput Thread from " + client.getName());
         boolean customBreak = false;
         while (!isInterrupted() && !customBreak) {
@@ -52,18 +52,13 @@ public class BufferInputThread extends Thread {
                 // send msg to all
                 OnlineClients.getInstance().sendMsgAll(currentTime, client.getName(), in, client.getPort());
                 //send to db
-//                OtarasSocketServerThreaded.conn.insertExample(client.getName(),in,new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()));
+//                SocketServerThreaded.conn.insertExample(client.getName(),in,new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date()));
                 //print on server
                 System.out.println(currentTime + " " + client.getName() + " : " + in);
-
-//                System.out.println(currentTime + " " + client.getName() + ": " + in);
 
                 if (in.equals("exit")) {
                     OnlineClients.getInstance().setOffline(client.getName());
                     OnlineClients.getInstance().removeClient(client);
-//                    bufferedReader.close();
-//                    printWriter.close();
-//                    client.getSocket().close();
                     break;
                 }
             } catch (IOException e) {
@@ -71,12 +66,5 @@ public class BufferInputThread extends Thread {
                 customBreak = true;
             }
         }
-//        String ClientLeftMessageForServer = "";
-//        for (ClientsPair client : OnlineClients.getInstance().getClientsPairList()) {
-//            if (client.getPort() == client.getSocket().getPort()) {
-//                ClientLeftMessageForServer = client.getName() + " left the chat.";
-//            }
-//        }
-//        System.out.println(ClientLeftMessageForServer);
     }
 }

@@ -10,40 +10,19 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * ConnectionStartTest tests if connection starts as it's predicted,
- * also it checks if clients receive the messages sent from the
- * server and they also are able to see the messages sent from
- * each other to be ChatRoom fully proper working.
- *
- */
-class ConnectionStartTest {
+class ReconnectionTest {
     @BeforeAll
     static void beforeTests() {
-        System.out.println("Connection Start Testing started");
+        System.out.println("Reconnection Testing started");
     }
 
     @AfterAll
     static void afterTests() {
-        System.out.println("Connection Start Testing finished");
+        System.out.println("Reconnection Testing finished");
     }
 
-    /**
-     * ClientThread is imitation of real Client.
-     * Instead of getting input from terminal test gets
-     * predefined name and message as a variables, that is given
-     * in constructor.
-     *
-     * printWriter sends this two variable to server.
-     * printWriter send exit message from both client's thread.
-     *
-     * Actually, server is imitated here too and it's called
-     * CustomBufferThreadInput as a Custom class that receives
-     * client's name and message and process it.
-     *
-     */
     static class ClientThread implements Runnable {
         Socket socket;
 
@@ -67,7 +46,7 @@ class ConnectionStartTest {
 
                 CustomBufferThreadInput input = new CustomBufferThreadInput(bufferedReader, this.name);
 
-                printWriter.println("exit");
+//                printWriter.println("exit");
 
                 input.start();
                 try {
@@ -85,21 +64,6 @@ class ConnectionStartTest {
         }
     }
 
-    /**
-     * CustomBufferThreadInput is imitated Server class
-     * that receives messages from imitated Client class,
-     * process it as real Server does and checks if actions
-     * is the same as it was predicted.
-     *
-     * In this particular test case it checks if when received
-     * name equals Daniel message must be predefined welcome
-     * pattern or the message that second client send. The same
-     * for the second client, It's name and welcome pattern
-     * text and first client's first message to be sure that
-     * these two client receive messages from each other and
-     * from the server too.
-     *
-     */
     static class CustomBufferThreadInput extends Thread {
         BufferedReader bufferedReader;
         String name;
@@ -127,23 +91,15 @@ class ConnectionStartTest {
                     if (this.name.equals("Daniel")) {
                         if (this.counter == 0) {
                             assert in != null;
-                            assertTrue(in.contains("Daniel join the chat"));
+                            assertTrue(in.contains("Daniel Join the chat")
+                                    || in.contains("The user with that name already exists!")
+                            );
                         } else {
                             assert in != null;
-                            assertTrue(in.contains("Gagimarjos"));
-                        }
-                    }
-                    if (this.name.equals("Otari")) {
-                        if (this.counter == 0) {
-                            assert in != null;
-                            assertTrue(in.contains("Otari join the chat"));
-                        } else {
-                            assert in != null;
-                            assertTrue(in.contains("Gamarjoba"));
                         }
                     }
                     this.counter = this.counter + 1;
-
+//                    System.out.println((this.counter));
                 } catch (IOException e) {
                     e.printStackTrace();
                     customBreak = true;
@@ -152,18 +108,11 @@ class ConnectionStartTest {
         }
     }
 
-    /**
-     * This test creates predefined two imitated Client class instance
-     * in a new thread and pass it ClientThread instance that has
-     * passed name and the first message to check if everything
-     * works as it was predicted.
-     *
-     */
     @Test
     void ServerTest1() {
-        Thread thread1 = new Thread(new ClientThread("Daniel", "Gamarjoba"));
+        Thread thread1 = new Thread(new ClientThread("Daniel", "Daniel"));
         thread1.start();
-        Thread thread2 = new Thread(new ClientThread("Otari", "Gagimarjos"));
+        Thread thread2 = new Thread(new ClientThread("Daniel", "Daniel"));
         thread2.start();
     }
 

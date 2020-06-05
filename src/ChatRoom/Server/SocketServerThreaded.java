@@ -5,13 +5,13 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * Class OtarasSocketServerThreaded creates new ClientsPair instance and
+ * Class SocketServerThreaded creates new ClientsPair instance and
  * based on it creates a new ConnectionThread thread for client.
  *
  * @author Daniel Barbakadze.
  * @author Valera Liparteliani.
  */
-public class OtarasSocketServerThreaded {
+public class SocketServerThreaded {
 
     private static final int PORT = 4321;
 //    make static SQL connection for server, use it in BufferInputThread,fill SQL_Connection arguments
