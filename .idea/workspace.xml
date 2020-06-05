@@ -21,44 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6202ad5b-fef1-48f2-b83c-f3799986ce68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Client/BufferInputThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Client/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Client/ScannerThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Client/ThreadClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Server/BufferInputThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Server/ClientsPair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Server/ConnectionThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Server/OnlineClients.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Server/OtarasSocketServerThreaded.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Server/SQL_Connection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Server/SocketThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Testing/GlobalClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Testing/MyObj.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Testing/oneClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Testing/secondClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/UnitTests/ConnectionEndTest$ClientThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/UnitTests/ConnectionEndTest$CustomBufferThreadInputExit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/UnitTests/ConnectionEndTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/UnitTests/ConnectionStartTest$ClientThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/UnitTests/ConnectionStartTest$CustomBufferThreadInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/UnitTests/ConnectionStartTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/UnitTests/ReconnectionTest$ClientThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/UnitTests/ReconnectionTest$CustomBufferThreadInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/UnitTests/ReconnectionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/UnitTests/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/META-INF/JavaProject.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/Sever/ScannerThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatRoom/Client/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Client/BufferInputThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatRoom/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatRoom/Client/ScannerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Client/ScannerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatRoom/Client/ThreadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Client/ThreadClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Server/BufferInputThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Server/BufferInputThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Server/SocketServerThreaded.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaProject/ChatRoom/Server/SocketServerThreaded.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChatRoom/Server/BufferInputThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/BufferInputThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatRoom/Server/ClientsPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/ClientsPair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatRoom/Server/ConnectionThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/ConnectionThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatRoom/Server/OnlineClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/OnlineClients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatRoom/Server/SQL_Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/SQL_Connection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChatRoom/Server/SocketServerThreaded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/Server/SocketServerThreaded.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatRoom/UnitTests/ConnectionStartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatRoom/UnitTests/ConnectionStartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,20 +78,7 @@
       <recent name="Sever" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConnectionTests">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ChatRoom.Client.Client" />
-      <module name="JavaProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ChatRoom.Client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SocketServerThreaded">
     <configuration name="OtarasSocketServerThreaded" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatRoom.Server.OtarasSocketServerThreaded" />
       <module name="JavaProject" />
@@ -152,8 +105,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ChatRoom.Server.ThreadServer" />
+    <configuration name="SocketServerThreaded" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatRoom.Server.SocketServerThreaded" />
       <module name="JavaProject" />
       <extension name="coverage">
         <pattern>
@@ -197,20 +150,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Client" />
       <item itemvalue="Application.OtarasSocketServerThreaded" />
-      <item itemvalue="Application.ThreadServer" />
       <item itemvalue="Application.SQL_Connection" />
+      <item itemvalue="Application.SocketServerThreaded" />
       <item itemvalue="JUnit.ConnectionTests" />
       <item itemvalue="JUnit.ConnectionTests.ServerTest2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SocketServerThreaded" />
         <item itemvalue="JUnit.ConnectionTests" />
         <item itemvalue="Application.OtarasSocketServerThreaded" />
         <item itemvalue="JUnit.ConnectionTests.ServerTest2" />
         <item itemvalue="Application.SQL_Connection" />
-        <item itemvalue="Application.ThreadServer" />
       </list>
     </recent_temporary>
   </component>
@@ -249,6 +201,7 @@
       <workItem from="1591200094197" duration="46000" />
       <workItem from="1591200277212" duration="3553000" />
       <workItem from="1591385572694" duration="164000" />
+      <workItem from="1591386271345" duration="25000" />
     </task>
     <servers />
   </component>
@@ -304,35 +257,35 @@
     </state>
     <state x="639" y="178" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590915152066" />
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1590222961548" />
-    <state width="1493" height="229" key="GridCell.Tab.0.bottom" timestamp="1591385736097">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom" timestamp="1591386197869">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="229" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1591385736097" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591386197869" />
     <state width="1874" height="162" key="GridCell.Tab.0.bottom/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.bottom/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1590255665235" />
-    <state width="1493" height="229" key="GridCell.Tab.0.center" timestamp="1591385736097">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="253" key="GridCell.Tab.0.center" timestamp="1591386197869">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="229" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1591385736097" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
+    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591386197869" />
     <state width="1874" height="162" key="GridCell.Tab.0.center/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.center/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1590255665233" />
-    <state width="1493" height="229" key="GridCell.Tab.0.left" timestamp="1591385736097">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="253" key="GridCell.Tab.0.left" timestamp="1591386197869">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="229" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1591385736097" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
+    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591386197869" />
     <state width="1874" height="162" key="GridCell.Tab.0.left/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086446" />
     <state width="1874" height="196" key="GridCell.Tab.0.left/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1590255665232" />
-    <state width="1493" height="229" key="GridCell.Tab.0.right" timestamp="1591385736097">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="253" key="GridCell.Tab.0.right" timestamp="1591386197869">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="229" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1591385736097" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590916823720" />
+    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591386197869" />
     <state width="1874" height="162" key="GridCell.Tab.0.right/0.339.1366.429/1366.0.1920.1080@0.339.1366.429" timestamp="1590597086447" />
     <state width="1874" height="196" key="GridCell.Tab.0.right/1920.312.1366.768/0.339.1920.741@0.339.1920.741" timestamp="1590599735618" />
     <state width="1253" height="88" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1590255665234" />

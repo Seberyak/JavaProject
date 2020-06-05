@@ -15,7 +15,9 @@ public class SocketServerThreaded {
 
     private static final int PORT = 4321;
 //    make static SQL connection for server, use it in BufferInputThread,fill SQL_Connection arguments
-//    public static SQL_Connection conn = new SQL_Connection("user","password");
+
+
+    public static SQL_Connection conn = new SQL_Connection("root","password");
 
     /**
      * Function main tries to create new ServerSocket as a instance called server.
